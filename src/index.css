@@ -1,0 +1,74 @@
+body{
+  background-color: hsl(0, 0%, 65%);
+}
+.to-do-list{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+}
+h1{
+  font-size: 3.5rem;
+}
+button{
+  font-size: 1.7rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+.add-button{
+  background-color: hsl(120, 100%, 35%);
+}
+.add-button:hover{
+  background-color: hsl(120, 100%, 25%);
+}
+.delete-button{
+  background-color: hsl(0, 100%, 45%);
+}
+.delete-button:hover{
+  background-color: hsl(0, 100%, 35%);
+}
+.move-button{
+  background-color: hsl(225, 100%, 65%);
+}
+.move-button:hover{
+  background-color: hsl(225, 100%, 55%);
+}
+input[type="text"]{
+  font-size: 1.6rem;
+  padding: 10px;
+  border: 2px solid hsl(0, 0%, 0%, 50%);
+  border-radius: 5px;
+  color:hsl(0, 0%, 0%, 50%);
+}
+ol{
+  padding: 0;
+}
+li{
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 15px;
+  background-color: hsl(0, 0%, 97%);
+  margin-bottom: 10px;
+  border: 3px solid hsla(0, 0%, 85%, 75%);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+.text{
+  flex: 1;
+  /* This equates to:
+  flex-grow: 1;
+  flex: shrink;
+  flex-basis: 0%;
+  This element will take up as much space as possible, so
+  all buttons will be pushed to the right */
+}
+.delete-button, .move-button{
+  padding: 10px 12px;
+  font-size: 1.4rem;
+  margin-left: 10px;
+}
